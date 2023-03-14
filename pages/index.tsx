@@ -38,7 +38,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-
+        <button onClick={() => {
+          throw Error('Hello from tht frontend')
+        }}>throw error</button>
         <div className={styles.center}>
           <Image
             className={styles.logo}
