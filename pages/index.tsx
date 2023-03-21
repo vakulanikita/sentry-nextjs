@@ -14,6 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* commit 1 */}
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
@@ -38,7 +39,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-
+        <button onClick={() => {
+          throw Error('Hello from tht frontend')
+        }}>throw error</button>
         <div className={styles.center}>
           <Image
             className={styles.logo}
